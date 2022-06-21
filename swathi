@@ -1,0 +1,40 @@
+void fish1()
+{
+     glColor3f(1.0,0.0,0.0);
+     glBegin(GL_POLYGON);
+     glVertex2f(270,350);
+     glVertex2f(300,325);
+     glVertex2f(370,350);
+     glVertex2f(300,375);
+     glEnd();
+
+     glBegin(GL_POLYGON);
+     glVertex2f(360,350);
+     glColor3ub( rand()%1, rand()%1000, rand()%1000 );
+     glVertex2f(405,370);
+     glVertex2f(395,350);
+     glVertex2f(405,327);
+     glEnd();
+
+     glBegin(GL_TRIANGLES);
+     glColor3ub( rand()%1, rand()%1000, rand()%1000 );
+     glVertex2f(302,373);
+     glColor3f(1.0,0.0,0.0);
+glVertex2f(340,409);
+glVertex2f(320,360);
+     glEnd();
+
+     glBegin(GL_TRIANGLES);
+     glColor3ub( rand()%1, rand()%1000, 0 );
+     glVertex2f(302,328);
+     glColor3f(1.0,0.0,0.0);
+glVertex2f(340,300);
+glVertex2f(320,340);
+     glEnd();
+
+     glColor3f(0.0,0.0,0.0);
+     glPointSize(5.0);
+     glBegin(GL_POINTS);
+     glVertex2f(285,355);
+     glEnd();
+}
